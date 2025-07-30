@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="contact-section">
+        <div class="contact-form">
+            <h2>Hello my friend</h2>
+            <form class="Contact" action="#" method="post">
+                <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+                <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+                <textarea name="message" id="moodText" rows="5" placeholder="Your Message" required></textarea>
+                <button onclick="submitMood(event)" class="send-btn" value="Send">Submit</button>
+                <div class="output">
+                    <p>
+
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Merriweather", serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: url("https://f.top4top.io/p_3348u9xrt1.jpg") no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .contact-section {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            justify-items: center;
+            background: rgba(211, 208, 208, 0.226);
+            border-radius: 10px;
+            padding: 30px;
+            color: #fff;
+        }
+
+
+        .contact-form {
+            max-width: 700px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .contact-form h2 {
+            color: #fff;
+            text-align: center;
+            font-size: 36px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .contact-form .text-box,
+        .contact-form textarea {
+            background: #2d73b4a8;
+            color: #fff;
+            border: none;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: background 0.3s;
+        }
+
+        .contact-form .text-box:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            background: #1d3347;
+        }
+
+        .contact-form textarea {
+            height: auto;
+        }
+
+        .contact-form .send-btn {
+            background: #6a97be;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .output{
+            background:  #2d73b4a8;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .contact-form .send-btn:hover {
+            background: #152638;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .contact-info {
+                padding-right: 0;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
